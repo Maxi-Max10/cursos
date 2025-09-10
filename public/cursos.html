@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos | Clack</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Clack</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cursos.html" class="active">Cursos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="cursos-section">
+      <h2>Todos los Cursos</h2>
+      <div class="cursos-filtros">
+        <input type="text" id="busqueda" class="input-busqueda" placeholder="Buscar cursos...">
+        <select id="filtroCategoria" class="input-filtro">
+          <option value="">Todas las categorías</option>
+          <option value="programacion">Programación</option>
+          <option value="redes">Redes</option>
+          <option value="ia">Inteligencia Artificial</option>
+          <option value="seguridad">Seguridad</option>
+        </select>
+      </div>
+      <div id="cursos-list" class="cursos-list cursos-grid"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Clack - Plataforma de Cursos de Informática</p>
+  </footer>
+  <script src="./js/cursos.js"></script>
+</body>
+</html>
